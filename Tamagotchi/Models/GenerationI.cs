@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class GenerationI
 	{
-        [JsonProperty("red-blue")]
+        [JsonPropertyName("red-blue")]
         public RedBlue RedBlue { get; set; }
 
-        [JsonProperty("yellow")]
+        [JsonPropertyName("yellow")]
         public RedBlue Yellow { get; set; }
     }
 }

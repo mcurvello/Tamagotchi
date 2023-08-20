@@ -1,10 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class GenerationV
 	{
-        [JsonProperty("black-white")]
+        [JsonPropertyName("black-white")]
         public Sprites BlackWhite { get; set; }
     }
 }

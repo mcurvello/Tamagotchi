@@ -1,16 +1,16 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class Other
 	{
-        [JsonProperty("dream_world")]
+        [JsonPropertyName("dream_world")]
         public DreamWorld DreamWorld { get; set; }
 
-        [JsonProperty("home")]
+        [JsonPropertyName("home")]
         public Home Home { get; set; }
 
-        [JsonProperty("official-artwork")]
+        [JsonPropertyName("official-artwork")]
         public OfficialArtwork OfficialArtwork { get; set; }
     }
 }

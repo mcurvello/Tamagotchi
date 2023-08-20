@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class TypeElement
 	{
-        [JsonProperty("slot")]
+        [JsonPropertyName("slot")]
         public long Slot { get; set; }
 
-        [JsonProperty("type")]
+        [JsonPropertyName("type")]
         public Species Type { get; set; }
     }
 }

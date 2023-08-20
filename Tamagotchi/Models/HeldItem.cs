@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class HeldItem
 	{
-        [JsonProperty("item")]
+        [JsonPropertyName("item")]
         public Species Item { get; set; }
 
-        [JsonProperty("version_details")]
+        [JsonPropertyName("version_details")]
         public VersionDetail[] VersionDetails { get; set; }
     }
 }

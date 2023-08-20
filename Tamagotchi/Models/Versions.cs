@@ -1,31 +1,31 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class Versions
 	{
-        [JsonProperty("generation-i")]
+        [JsonPropertyName("generation-i")]
         public GenerationI GenerationI { get; set; }
 
-        [JsonProperty("generation-ii")]
+        [JsonPropertyName("generation-ii")]
         public GenerationIi GenerationIi { get; set; }
 
-        [JsonProperty("generation-iii")]
+        [JsonPropertyName("generation-iii")]
         public GenerationIii GenerationIii { get; set; }
 
-        [JsonProperty("generation-iv")]
+        [JsonPropertyName("generation-iv")]
         public GenerationIv GenerationIv { get; set; }
 
-        [JsonProperty("generation-v")]
+        [JsonPropertyName("generation-v")]
         public GenerationV GenerationV { get; set; }
 
-        [JsonProperty("generation-vi")]
+        [JsonPropertyName("generation-vi")]
         public Dictionary<string, Home> GenerationVi { get; set; }
 
-        [JsonProperty("generation-vii")]
+        [JsonPropertyName("generation-vii")]
         public GenerationVii GenerationVii { get; set; }
 
-        [JsonProperty("generation-viii")]
+        [JsonPropertyName("generation-viii")]
         public GenerationViii GenerationViii { get; set; }
     }
 }

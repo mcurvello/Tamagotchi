@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class VersionDetail
 	{
-        [JsonProperty("rarity")]
+        [JsonPropertyName("rarity")]
         public long Rarity { get; set; }
 
-        [JsonProperty("version")]
+        [JsonPropertyName("version")]
         public Species Version { get; set; }
     }
 }

@@ -1,16 +1,16 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class Stat
 	{
-        [JsonProperty("base_stat")]
+        [JsonPropertyName("base_stat")]
         public long BaseStat { get; set; }
 
-        [JsonProperty("effort")]
+        [JsonPropertyName("effort")]
         public long Effort { get; set; }
 
-        [JsonProperty("stat")]
+        [JsonPropertyName("stat")]
         public Species StatStat { get; set; }
     }
 }

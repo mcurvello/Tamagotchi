@@ -1,16 +1,16 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class GenerationIi
 	{
-        [JsonProperty("crystal")]
+        [JsonPropertyName("crystal")]
         public Crystal Crystal { get; set; }
 
-        [JsonProperty("gold")]
+        [JsonPropertyName("gold")]
         public Gold Gold { get; set; }
 
-        [JsonProperty("silver")]
+        [JsonPropertyName("silver")]
         public Gold Silver { get; set; }
     }
 }

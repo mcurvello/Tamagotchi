@@ -1,19 +1,19 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class Home
 	{
-        [JsonProperty("front_default")]
+        [JsonPropertyName("front_default")]
         public Uri FrontDefault { get; set; }
 
-        [JsonProperty("front_female")]
+        [JsonPropertyName("front_female")]
         public object FrontFemale { get; set; }
 
-        [JsonProperty("front_shiny")]
+        [JsonPropertyName("front_shiny")]
         public Uri FrontShiny { get; set; }
 
-        [JsonProperty("front_shiny_female")]
+        [JsonPropertyName("front_shiny_female")]
         public object FrontShinyFemale { get; set; }
     }
 }

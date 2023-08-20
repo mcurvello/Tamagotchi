@@ -1,16 +1,16 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class Ability
 	{
-        [JsonProperty("ability")]
+        [JsonPropertyName("ability")]
         public Species AbilityAbility { get; set; }
 
-        [JsonProperty("is_hidden")]
+        [JsonPropertyName("is_hidden")]
         public bool IsHidden { get; set; }
 
-        [JsonProperty("slot")]
+        [JsonPropertyName("slot")]
         public long Slot { get; set; }
     }
 }

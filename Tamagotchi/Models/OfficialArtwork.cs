@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class OfficialArtwork
 	{
-        [JsonProperty("front_default")]
+        [JsonPropertyName("front_default")]
         public Uri FrontDefault { get; set; }
 
-        [JsonProperty("front_shiny")]
+        [JsonPropertyName("front_shiny")]
         public Uri FrontShiny { get; set; }
     }
 }

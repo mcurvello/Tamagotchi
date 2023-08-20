@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class DreamWorld
 	{
-        [JsonProperty("front_default")]
+        [JsonPropertyName("front_default")]
         public Uri FrontDefault { get; set; }
 
-        [JsonProperty("front_female")]
+        [JsonPropertyName("front_female")]
         public object FrontFemale { get; set; }
     }
 }

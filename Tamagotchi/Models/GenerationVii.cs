@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class GenerationVii
 	{
-        [JsonProperty("icons")]
+        [JsonPropertyName("icons")]
         public DreamWorld Icons { get; set; }
 
-        [JsonProperty("ultra-sun-ultra-moon")]
+        [JsonPropertyName("ultra-sun-ultra-moon")]
         public Home UltraSunUltraMoon { get; set; }
     }
 }

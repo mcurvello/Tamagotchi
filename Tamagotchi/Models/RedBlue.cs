@@ -1,25 +1,25 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class RedBlue
 	{
-        [JsonProperty("back_default")]
+        [JsonPropertyName("back_default")]
         public Uri BackDefault { get; set; }
 
-        [JsonProperty("back_gray")]
+        [JsonPropertyName("back_gray")]
         public Uri BackGray { get; set; }
 
-        [JsonProperty("back_transparent")]
+        [JsonPropertyName("back_transparent")]
         public Uri BackTransparent { get; set; }
 
-        [JsonProperty("front_default")]
+        [JsonPropertyName("front_default")]
         public Uri FrontDefault { get; set; }
 
-        [JsonProperty("front_gray")]
+        [JsonPropertyName("front_gray")]
         public Uri FrontGray { get; set; }
 
-        [JsonProperty("front_transparent")]
+        [JsonPropertyName("front_transparent")]
         public Uri FrontTransparent { get; set; }
     }
 }

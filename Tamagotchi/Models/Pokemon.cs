@@ -1,61 +1,61 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
-    public class Tamagotchi
+    public class Pokemon
     {
-        [JsonProperty("abilities")]
+        [JsonPropertyName("abilities")]
         public Ability[] Abilities { get; set; }
 
-        [JsonProperty("base_experience")]
+        [JsonPropertyName("base_experience")]
         public long BaseExperience { get; set; }
 
-        [JsonProperty("forms")]
+        [JsonPropertyName("forms")]
         public Species[] Forms { get; set; }
 
-        [JsonProperty("game_indices")]
+        [JsonPropertyName("game_indices")]
         public GameIndex[] GameIndices { get; set; }
 
-        [JsonProperty("height")]
+        [JsonPropertyName("height")]
         public long Height { get; set; }
 
-        [JsonProperty("held_items")]
+        [JsonPropertyName("held_items")]
         public HeldItem[] HeldItems { get; set; }
 
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
-        [JsonProperty("is_default")]
+        [JsonPropertyName("is_default")]
         public bool IsDefault { get; set; }
 
-        [JsonProperty("location_area_encounters")]
+        [JsonPropertyName("location_area_encounters")]
         public Uri LocationAreaEncounters { get; set; }
 
-        [JsonProperty("moves")]
+        [JsonPropertyName("moves")]
         public Move[] Moves { get; set; }
 
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
-        [JsonProperty("order")]
+        [JsonPropertyName("order")]
         public long Order { get; set; }
 
-        [JsonProperty("past_types")]
+        [JsonPropertyName("past_types")]
         public object[] PastTypes { get; set; }
 
-        [JsonProperty("species")]
+        [JsonPropertyName("species")]
         public Species Species { get; set; }
 
-        [JsonProperty("sprites")]
+        [JsonPropertyName("sprites")]
         public Sprites Sprites { get; set; }
 
-        [JsonProperty("stats")]
+        [JsonPropertyName("stats")]
         public Stat[] Stats { get; set; }
 
-        [JsonProperty("types")]
+        [JsonPropertyName("types")]
         public TypeElement[] Types { get; set; }
 
-        [JsonProperty("weight")]
+        [JsonPropertyName("weight")]
         public long Weight { get; set; }
     }
 }

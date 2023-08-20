@@ -1,31 +1,31 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class Crystal
 	{
-        [JsonProperty("back_default")]
+        [JsonPropertyName("back_default")]
         public Uri BackDefault { get; set; }
 
-        [JsonProperty("back_shiny")]
+        [JsonPropertyName("back_shiny")]
         public Uri BackShiny { get; set; }
 
-        [JsonProperty("back_shiny_transparent")]
+        [JsonPropertyName("back_shiny_transparent")]
         public Uri BackShinyTransparent { get; set; }
 
-        [JsonProperty("back_transparent")]
+        [JsonPropertyName("back_transparent")]
         public Uri BackTransparent { get; set; }
 
-        [JsonProperty("front_default")]
+        [JsonPropertyName("front_default")]
         public Uri FrontDefault { get; set; }
 
-        [JsonProperty("front_shiny")]
+        [JsonPropertyName("front_shiny")]
         public Uri FrontShiny { get; set; }
 
-        [JsonProperty("front_shiny_transparent")]
+        [JsonPropertyName("front_shiny_transparent")]
         public Uri FrontShinyTransparent { get; set; }
 
-        [JsonProperty("front_transparent")]
+        [JsonPropertyName("front_transparent")]
         public Uri FrontTransparent { get; set; }
     }
 }

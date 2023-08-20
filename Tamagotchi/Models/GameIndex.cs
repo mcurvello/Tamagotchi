@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class GameIndex
     {
-        [JsonProperty("game_index")]
+        [JsonPropertyName("game_index")]
         public long GameIndexGameIndex { get; set; }
 
-        [JsonProperty("version")]
+        [JsonPropertyName("version")]
         public Species Version { get; set; }
     }
 }

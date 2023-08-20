@@ -1,40 +1,40 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace Tamagotchi.Models
 {
     public class Sprites
 	{
-        [JsonProperty("back_default")]
+        [JsonPropertyName("back_default")]
         public Uri BackDefault { get; set; }
 
-        [JsonProperty("back_female")]
+        [JsonPropertyName("back_female")]
         public object BackFemale { get; set; }
 
-        [JsonProperty("back_shiny")]
+        [JsonPropertyName("back_shiny")]
         public Uri BackShiny { get; set; }
 
-        [JsonProperty("back_shiny_female")]
+        [JsonPropertyName("back_shiny_female")]
         public object BackShinyFemale { get; set; }
 
-        [JsonProperty("front_default")]
+        [JsonPropertyName("front_default")]
         public Uri FrontDefault { get; set; }
 
-        [JsonProperty("front_female")]
+        [JsonPropertyName("front_female")]
         public object FrontFemale { get; set; }
 
-        [JsonProperty("front_shiny")]
+        [JsonPropertyName("front_shiny")]
         public Uri FrontShiny { get; set; }
 
-        [JsonProperty("front_shiny_female")]
+        [JsonPropertyName("front_shiny_female")]
         public object FrontShinyFemale { get; set; }
 
-        [JsonProperty("other", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("other")]
         public Other Other { get; set; }
 
-        [JsonProperty("versions", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("versions")]
         public Versions Versions { get; set; }
 
-        [JsonProperty("animated", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("animated")]
         public Sprites Animated { get; set; }
     }
 }
